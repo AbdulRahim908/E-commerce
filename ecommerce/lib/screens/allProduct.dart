@@ -35,3 +35,31 @@ class AllProductsView extends StatelessWidget {
     );
   }
 }
+// GridView.builder(
+//           itemCount: 3,
+//           gridDelegate:
+//               SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+//           itemBuilder: (context, index) {
+//             return Padding(
+//               padding: const EdgeInsets.all(8.0),
+//               child: Container(
+//                 height: 100,
+//                 width: 100,
+//                 child: Column(mainAxisAlignment: MainAxisAlignment.end,crossAxisAlignment: CrossAxisAlignment.start,
+//                   children: [
+//                     Text(
+//                       "  Family",
+//                       style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),
+//                     ),
+//                     Text(
+//                       '  22 members',
+//                       style: TextStyle(fontSize: 15),
+//                     )
+//                   ],
+//                 ),
+//                 decoration: BoxDecoration(
+//                   color: Colors.blue,borderRadius: BorderRadius.circular(20)
+//                 ),
+//               ),
+//             );
+//           }),

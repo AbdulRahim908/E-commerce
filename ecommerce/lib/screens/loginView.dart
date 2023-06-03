@@ -1,5 +1,6 @@
 import 'package:ecommerce/screens/addProduct.dart';
 import 'package:ecommerce/screens/allProduct.dart';
+import 'package:ecommerce/screens/appscreen.dart';
 import 'package:ecommerce/screens/signUpView.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -18,7 +19,7 @@ class LoginView extends StatelessWidget {
           email: email_control.text, password: pass_control.text);
       Navigator.of(context).push(
         MaterialPageRoute(
-          builder: (context) => AllProductsView(),
+          builder: (context) => AppScreen(),
         ),
       );
     } on FirebaseAuthException catch (e) {
